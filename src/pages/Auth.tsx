@@ -80,7 +80,7 @@ const Auth = () => {
         <div className="text-center mb-8">
           <Link
             to="/"
-            className="inline-flex items-center text-sm text-slate-600 hover:text-mindspace-600 mb-6 transition-colors"
+            className="inline-flex items-center text-sm text-indigo-700 hover:text-mindspace-600 mb-6 transition-colors"
           >
             <ArrowLeft className="h-4 w-4 mr-2" />
             Back to home
@@ -92,10 +92,10 @@ const Auth = () => {
             </div>
           </div>
 
-          <h1 className="text-3xl font-bold text-slate-900 mb-2">
+          <h1 className="text-3xl font-bold text-indigo-950 mb-2">
             {isLogin ? "Welcome back" : "Create account"}
           </h1>
-          <p className="text-slate-700">
+          <p className="text-indigo-800">
             {isLogin
               ? "Sign in to continue your meditation journey"
               : "Start your transformation with MindSpace AR"}
@@ -114,7 +114,7 @@ const Auth = () => {
           <form onSubmit={handleSubmit} className="space-y-6">
             {!isLogin && (
               <div className="space-y-2">
-                <Label htmlFor="name" className="text-slate-800 font-medium">
+                <Label htmlFor="name" className="text-indigo-900 font-medium">
                   Full Name
                 </Label>
                 <div className="relative">
@@ -126,7 +126,7 @@ const Auth = () => {
                     placeholder="Enter your full name"
                     value={formData.name}
                     onChange={handleInputChange}
-                    className="pl-10 h-12 bg-white/80 border-slate-200 focus:border-mindspace-400 focus:ring-mindspace-400"
+                    className="pl-10 h-12 bg-white/90 border-indigo-200 focus:border-mindspace-400 focus:ring-mindspace-400"
                     required
                   />
                 </div>
@@ -134,11 +134,11 @@ const Auth = () => {
             )}
 
             <div className="space-y-2">
-              <Label htmlFor="email" className="text-slate-800 font-medium">
+              <Label htmlFor="email" className="text-indigo-900 font-medium">
                 Email Address
               </Label>
               <div className="relative">
-                <Mail className="absolute left-3 top-1/2 transform -translate-y-1/2 h-5 w-5 text-slate-400" />
+                <Mail className="absolute left-3 top-1/2 transform -translate-y-1/2 h-5 w-5 text-indigo-500" />
                 <Input
                   id="email"
                   name="email"
@@ -146,18 +146,18 @@ const Auth = () => {
                   placeholder="Enter your email"
                   value={formData.email}
                   onChange={handleInputChange}
-                  className="pl-10 h-12 bg-white/80 border-slate-200 focus:border-mindspace-400 focus:ring-mindspace-400"
+                  className="pl-10 h-12 bg-white/90 border-indigo-200 focus:border-mindspace-400 focus:ring-mindspace-400"
                   required
                 />
               </div>
             </div>
 
             <div className="space-y-2">
-              <Label htmlFor="password" className="text-slate-800 font-medium">
+              <Label htmlFor="password" className="text-indigo-900 font-medium">
                 Password
               </Label>
               <div className="relative">
-                <Lock className="absolute left-3 top-1/2 transform -translate-y-1/2 h-5 w-5 text-slate-400" />
+                <Lock className="absolute left-3 top-1/2 transform -translate-y-1/2 h-5 w-5 text-indigo-500" />
                 <Input
                   id="password"
                   name="password"
@@ -165,13 +165,13 @@ const Auth = () => {
                   placeholder="Enter your password"
                   value={formData.password}
                   onChange={handleInputChange}
-                  className="pl-10 pr-10 h-12 bg-white/80 border-slate-200 focus:border-mindspace-400 focus:ring-mindspace-400"
+                  className="pl-10 pr-10 h-12 bg-white/90 border-indigo-200 focus:border-mindspace-400 focus:ring-mindspace-400"
                   required
                 />
                 <button
                   type="button"
                   onClick={() => setShowPassword(!showPassword)}
-                  className="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400 hover:text-gray-600"
+                  className="absolute right-3 top-1/2 transform -translate-y-1/2 text-indigo-500 hover:text-indigo-700"
                 >
                   {showPassword ? (
                     <EyeOff className="h-5 w-5" />
@@ -181,7 +181,7 @@ const Auth = () => {
                 </button>
               </div>
               {!isLogin && (
-                <p className="text-xs text-gray-500 mt-1">
+                <p className="text-xs text-indigo-600 mt-1">
                   Password must be at least 8 characters long
                 </p>
               )}
@@ -194,7 +194,7 @@ const Auth = () => {
                     type="checkbox"
                     className="rounded border-gray-300 text-mindspace-600 focus:ring-mindspace-500"
                   />
-                  <span className="ml-2 text-sm text-slate-700">
+                  <span className="ml-2 text-sm text-indigo-800">
                     Remember me
                   </span>
                 </label>
@@ -223,7 +223,7 @@ const Auth = () => {
             </Button>
 
             {!isLogin && (
-              <p className="text-xs text-center text-gray-500">
+              <p className="text-xs text-center text-indigo-600">
                 By creating an account, you agree to our{" "}
                 <a href="#" className="text-mindspace-600 hover:underline">
                   Terms of Service
@@ -239,7 +239,7 @@ const Auth = () => {
 
         {/* Toggle Auth Mode */}
         <div className="text-center mt-6">
-          <p className="text-slate-700">
+          <p className="text-indigo-800">
             {isLogin ? "Don't have an account?" : "Already have an account?"}
             <button
               onClick={() => setIsLogin(!isLogin)}
@@ -253,7 +253,7 @@ const Auth = () => {
         {/* Social proof for signup */}
         {!isLogin && (
           <div className="mt-8 text-center">
-            <p className="text-sm text-gray-500 mb-4">
+            <p className="text-sm text-indigo-600 mb-4">
               Trusted by 50,000+ users worldwide
             </p>
             <div className="flex justify-center space-x-2">
