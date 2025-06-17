@@ -103,7 +103,7 @@
   }
 
   .gradient-bg-dark {
-    @apply bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900;
+    @apply bg-gradient-to-br from-blue-900 via-indigo-900 to-violet-900;
   }
 
   .floating-card {
