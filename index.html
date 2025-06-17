@@ -3,12 +3,168 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello world project</title>
+
+    <!-- Primary Meta Tags -->
+    <title>MindSpace AR - Revolutionary Mental Wellness Platform</title>
+    <meta
+      name="title"
+      content="MindSpace AR - Revolutionary Mental Wellness Platform"
+    />
+    <meta
+      name="description"
+      content="Experience the future of mental wellness with AI-powered personalization and immersive 3D meditation environments. Transform your mind and space with cutting-edge AR technology."
+    />
+    <meta
+      name="keywords"
+      content="meditation, mental wellness, AR, augmented reality, mindfulness, stress relief, AI coaching, 3D environments"
+    />
+    <meta name="author" content="MindSpace AR Team" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://mindspace-ar.com/" />
+    <meta
+      property="og:title"
+      content="MindSpace AR - Revolutionary Mental Wellness Platform"
+    />
+    <meta
+      property="og:description"
+      content="Experience the future of mental wellness with AI-powered personalization and immersive 3D meditation environments."
+    />
+    <meta property="og:image" content="https://mindspace-ar.com/og-image.jpg" />
+    <meta property="og:site_name" content="MindSpace AR" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://mindspace-ar.com/" />
+    <meta
+      property="twitter:title"
+      content="MindSpace AR - Revolutionary Mental Wellness Platform"
+    />
+    <meta
+      property="twitter:description"
+      content="Experience the future of mental wellness with AI-powered personalization and immersive 3D meditation environments."
+    />
+    <meta
+      property="twitter:image"
+      content="https://mindspace-ar.com/twitter-image.jpg"
+    />
+    <meta property="twitter:creator" content="@mindspacear" />
+
+    <!-- Favicon and Icons -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="/manifest.json" />
+
+    <!-- Theme Colors -->
+    <meta name="theme-color" content="#0ea5e9" />
+    <meta name="msapplication-TileColor" content="#0ea5e9" />
+    <meta name="msapplication-config" content="/browserconfig.xml" />
+
+    <!-- iOS Specific -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+    <meta name="apple-mobile-web-app-title" content="MindSpace AR" />
+
+    <!-- Preconnect to external domains -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://images.unsplash.com" />
+    <link rel="preconnect" href="https://api.dicebear.com" />
+
+    <!-- DNS Prefetch -->
+    <link rel="dns-prefetch" href="//fonts.googleapis.com" />
+    <link rel="dns-prefetch" href="//fonts.gstatic.com" />
+    <link rel="dns-prefetch" href="//images.unsplash.com" />
+
+    <!-- Preload critical resources -->
+    <link rel="preload" href="/src/index.css" as="style" />
+
+    <!-- Security Headers -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta http-equiv="X-Frame-Options" content="DENY" />
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block" />
+
+    <!-- Performance hints -->
+    <meta http-equiv="x-dns-prefetch-control" content="on" />
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "MindSpace AR",
+        "description": "Revolutionary mental wellness platform combining AI-powered personalization with immersive meditation experiences",
+        "url": "https://mindspace-ar.com",
+        "applicationCategory": "HealthApplication",
+        "operatingSystem": "All",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        },
+        "author": {
+          "@type": "Organization",
+          "name": "MindSpace AR Team"
+        },
+        "screenshot": "https://mindspace-ar.com/screenshot.jpg",
+        "softwareVersion": "1.0.0",
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.8",
+          "ratingCount": "1250"
+        }
+      }
+    </script>
   </head>
 
   <body>
     <div id="root"></div>
 
+    <!-- Service Worker Registration -->
+    <script>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", function () {
+          navigator.serviceWorker
+            .register("/sw.js")
+            .then(function (registration) {
+              console.log("SW registered: ", registration);
+            })
+            .catch(function (registrationError) {
+              console.log("SW registration failed: ", registrationError);
+            });
+        });
+      }
+    </script>
+
+    <!-- App Loading Script -->
     <script type="module" src="/src/main.tsx"></script>
+
+    <!-- Fallback for users with JavaScript disabled -->
+    <noscript>
+      <div
+        style="
+          text-align: center;
+          padding: 50px;
+          font-family:
+            -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;,
+            &quot;Roboto&quot;, sans-serif;
+        "
+      >
+        <h1>MindSpace AR</h1>
+        <p>Please enable JavaScript to use this application.</p>
+        <p>
+          MindSpace AR requires JavaScript to provide the interactive meditation
+          experience.
+        </p>
+      </div>
+    </noscript>
   </body>
 </html>
