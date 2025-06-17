@@ -271,7 +271,7 @@ const Index = () => {
                 <Button
                   size="lg"
                   variant="outline"
-                  className="text-lg px-8 py-6 border-mindspace-300 text-mindspace-600 hover:bg-mindspace-50"
+                  className="text-lg px-8 py-6 border-mindspace-400 text-mindspace-600 hover:bg-mindspace-50"
                 >
                   Watch Demo
                   <ArrowRight className="h-5 w-5 ml-2" />
