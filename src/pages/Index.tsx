@@ -118,19 +118,19 @@ const Index = () => {
               <div className="ml-10 flex items-baseline space-x-4">
                 <a
                   href="#features"
-                  className="text-slate-800 hover:text-mindspace-600 px-3 py-2 rounded-md text-sm font-medium transition-colors"
+                  className="text-indigo-900 hover:text-mindspace-600 px-3 py-2 rounded-md text-sm font-medium transition-colors"
                 >
                   Features
                 </a>
                 <a
                   href="#pricing"
-                  className="text-slate-800 hover:text-mindspace-600 px-3 py-2 rounded-md text-sm font-medium transition-colors"
+                  className="text-indigo-900 hover:text-mindspace-600 px-3 py-2 rounded-md text-sm font-medium transition-colors"
                 >
                   Pricing
                 </a>
                 <a
                   href="#testimonials"
-                  className="text-slate-800 hover:text-mindspace-600 px-3 py-2 rounded-md text-sm font-medium transition-colors"
+                  className="text-indigo-900 hover:text-mindspace-600 px-3 py-2 rounded-md text-sm font-medium transition-colors"
                 >
                   Reviews
                 </a>
@@ -162,7 +162,7 @@ const Index = () => {
             <div className="md:hidden">
               <button
                 onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-                className="p-2 rounded-md text-slate-800 hover:text-mindspace-600"
+                className="p-2 rounded-md text-indigo-900 hover:text-mindspace-600"
               >
                 {mobileMenuOpen ? (
                   <X className="h-6 w-6" />
@@ -180,21 +180,21 @@ const Index = () => {
             <div className="px-2 pt-2 pb-3 space-y-1">
               <a
                 href="#features"
-                className="block px-3 py-2 text-slate-800 hover:text-mindspace-600"
+                className="block px-3 py-2 text-indigo-900 hover:text-mindspace-600"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 Features
               </a>
               <a
                 href="#pricing"
-                className="block px-3 py-2 text-slate-800 hover:text-mindspace-600"
+                className="block px-3 py-2 text-indigo-900 hover:text-mindspace-600"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 Pricing
               </a>
               <a
                 href="#testimonials"
-                className="block px-3 py-2 text-slate-800 hover:text-mindspace-600"
+                className="block px-3 py-2 text-indigo-900 hover:text-mindspace-600"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 Reviews
@@ -235,12 +235,12 @@ const Index = () => {
                 <Sparkles className="h-4 w-4 mr-2" />
                 Revolutionary AR Meditation
               </Badge>
-              <h1 className="text-4xl lg:text-6xl font-bold text-slate-900 leading-tight mb-6">
+              <h1 className="text-4xl lg:text-6xl font-bold text-indigo-950 leading-tight mb-6">
                 Transform Your
                 <span className="gradient-text block">Mind & Space</span>
                 with AI-Powered AR
               </h1>
-              <p className="text-xl text-slate-700 mb-8 leading-relaxed">
+              <p className="text-xl text-indigo-800 mb-8 leading-relaxed">
                 Experience the future of mental wellness with MindSpace AR.
                 Combine cutting-edge augmented reality with AI-driven
                 personalization to create immersive meditation experiences that
@@ -277,7 +277,7 @@ const Index = () => {
                   <ArrowRight className="h-5 w-5 ml-2" />
                 </Button>
               </div>
-              <div className="mt-8 flex items-center space-x-6 text-sm text-gray-500">
+              <div className="mt-8 flex items-center space-x-6 text-sm text-indigo-700">
                 <div className="flex items-center">
                   <Check className="h-4 w-4 text-emerald-500 mr-2" />
                   Free 7-day trial
@@ -313,10 +313,10 @@ const Index = () => {
       <section id="features" className="py-20 bg-white/50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl lg:text-4xl font-bold text-slate-900 mb-4">
+            <h2 className="text-3xl lg:text-4xl font-bold text-indigo-950 mb-4">
               Revolutionary Features
             </h2>
-            <p className="text-xl text-slate-700 max-w-3xl mx-auto">
+            <p className="text-xl text-indigo-800 max-w-3xl mx-auto">
               Discover how MindSpace AR combines cutting-edge technology with
               ancient wisdom to create the ultimate meditation experience.
             </p>
@@ -329,10 +329,10 @@ const Index = () => {
                 className="p-8 glass hover:shadow-xl transition-all duration-300 floating-card border-0"
               >
                 <div className={`${feature.color} mb-4`}>{feature.icon}</div>
-                <h3 className="text-xl font-semibold text-slate-900 mb-3">
+                <h3 className="text-xl font-semibold text-indigo-950 mb-3">
                   {feature.title}
                 </h3>
-                <p className="text-slate-700 leading-relaxed">
+                <p className="text-indigo-800 leading-relaxed">
                   {feature.description}
                 </p>
               </Card>
@@ -345,10 +345,10 @@ const Index = () => {
       <section id="testimonials" className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl lg:text-4xl font-bold text-slate-900 mb-4">
+            <h2 className="text-3xl lg:text-4xl font-bold text-indigo-950 mb-4">
               Loved by Thousands
             </h2>
-            <p className="text-xl text-slate-700">
+            <p className="text-xl text-indigo-800">
               See what our community is saying about their transformation
               journey.
             </p>
@@ -365,7 +365,7 @@ const Index = () => {
                     />
                   ))}
                 </div>
-                <p className="text-slate-700 mb-6 italic">
+                <p className="text-indigo-800 mb-6 italic">
                   "{testimonial.content}"
                 </p>
                 <div className="flex items-center">
@@ -375,10 +375,12 @@ const Index = () => {
                     className="w-12 h-12 rounded-full mr-4"
                   />
                   <div>
-                    <p className="font-semibold text-slate-900">
+                    <p className="font-semibold text-indigo-950">
                       {testimonial.name}
                     </p>
-                    <p className="text-sm text-slate-600">{testimonial.role}</p>
+                    <p className="text-sm text-indigo-700">
+                      {testimonial.role}
+                    </p>
                   </div>
                 </div>
               </Card>
@@ -391,10 +393,10 @@ const Index = () => {
       <section id="pricing" className="py-20 bg-white/50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl lg:text-4xl font-bold text-slate-900 mb-4">
+            <h2 className="text-3xl lg:text-4xl font-bold text-indigo-950 mb-4">
               Simple, Transparent Pricing
             </h2>
-            <p className="text-xl text-slate-700">
+            <p className="text-xl text-indigo-800">
               Choose the plan that fits your meditation journey.
             </p>
           </div>
@@ -403,9 +405,11 @@ const Index = () => {
             {/* Free Plan */}
             <Card className="p-8 glass border-0">
               <div className="text-center">
-                <h3 className="text-2xl font-bold text-slate-900 mb-2">Free</h3>
-                <p className="text-4xl font-bold text-slate-900 mb-1">$0</p>
-                <p className="text-slate-600 mb-6">Forever</p>
+                <h3 className="text-2xl font-bold text-indigo-950 mb-2">
+                  Free
+                </h3>
+                <p className="text-4xl font-bold text-indigo-950 mb-1">$0</p>
+                <p className="text-indigo-700 mb-6">Forever</p>
                 <ul className="space-y-4 mb-8 text-left">
                   <li className="flex items-center">
                     <Check className="h-5 w-5 text-emerald-500 mr-3" />
@@ -432,11 +436,11 @@ const Index = () => {
                 Most Popular
               </Badge>
               <div className="text-center">
-                <h3 className="text-2xl font-bold text-slate-900 mb-2">
+                <h3 className="text-2xl font-bold text-indigo-950 mb-2">
                   Premium
                 </h3>
-                <p className="text-4xl font-bold text-slate-900 mb-1">$9.99</p>
-                <p className="text-slate-600 mb-6">per month</p>
+                <p className="text-4xl font-bold text-indigo-950 mb-1">$9.99</p>
+                <p className="text-indigo-700 mb-6">per month</p>
                 <ul className="space-y-4 mb-8 text-left">
                   <li className="flex items-center">
                     <Check className="h-5 w-5 text-emerald-500 mr-3" />
@@ -471,11 +475,13 @@ const Index = () => {
             {/* Enterprise Plan */}
             <Card className="p-8 glass border-0">
               <div className="text-center">
-                <h3 className="text-2xl font-bold text-slate-900 mb-2">
+                <h3 className="text-2xl font-bold text-indigo-950 mb-2">
                   Enterprise
                 </h3>
-                <p className="text-4xl font-bold text-slate-900 mb-1">Custom</p>
-                <p className="text-slate-600 mb-6">Contact us</p>
+                <p className="text-4xl font-bold text-indigo-950 mb-1">
+                  Custom
+                </p>
+                <p className="text-indigo-700 mb-6">Contact us</p>
                 <ul className="space-y-4 mb-8 text-left">
                   <li className="flex items-center">
                     <Check className="h-5 w-5 text-emerald-500 mr-3" />
@@ -537,7 +543,7 @@ const Index = () => {
       </section>
 
       {/* Footer */}
-      <footer className="bg-gray-900 text-white py-12">
+      <footer className="bg-indigo-950 text-indigo-100 py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div className="col-span-1 md:col-span-2">
@@ -547,16 +553,19 @@ const Index = () => {
                 </div>
                 <span className="ml-3 text-xl font-bold">MindSpace AR</span>
               </div>
-              <p className="text-slate-400 max-w-md">
+              <p className="text-indigo-300 max-w-md">
                 Revolutionizing mental wellness through AI-powered augmented
                 reality meditation experiences.
               </p>
             </div>
             <div>
               <h4 className="text-lg font-semibold mb-4">Product</h4>
-              <ul className="space-y-2 text-slate-400">
+              <ul className="space-y-2 text-indigo-300">
                 <li>
-                  <a href="#" className="hover:text-white transition-colors">
+                  <a
+                    href="#"
+                    className="hover:text-indigo-100 transition-colors"
+                  >
                     Features
                   </a>
                 </li>
@@ -593,7 +602,7 @@ const Index = () => {
               </ul>
             </div>
           </div>
-          <div className="border-t border-slate-800 mt-12 pt-8 text-center text-slate-400">
+          <div className="border-t border-indigo-800 mt-12 pt-8 text-center text-indigo-300">
             <p>&copy; 2024 MindSpace AR. All rights reserved.</p>
           </div>
         </div>
