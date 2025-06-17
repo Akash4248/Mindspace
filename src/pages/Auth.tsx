@@ -80,7 +80,7 @@ const Auth = () => {
         <div className="text-center mb-8">
           <Link
             to="/"
-            className="inline-flex items-center text-sm text-slate-700 hover:text-mindspace-600 mb-6 transition-colors"
+            className="inline-flex items-center text-sm text-gray-200 hover:text-yellow-300 mb-6 transition-colors"
           >
             <ArrowLeft className="h-4 w-4 mr-2" />
             Back to home
@@ -92,10 +92,10 @@ const Auth = () => {
             </div>
           </div>
 
-          <h1 className="text-3xl font-bold text-slate-900 mb-2">
+          <h1 className="text-3xl font-bold text-white mb-2">
             {isLogin ? "Welcome back" : "Create account"}
           </h1>
-          <p className="text-slate-800">
+          <p className="text-gray-100">
             {isLogin
               ? "Sign in to continue your meditation journey"
               : "Start your transformation with MindSpace AR"}
@@ -114,7 +114,7 @@ const Auth = () => {
           <form onSubmit={handleSubmit} className="space-y-6">
             {!isLogin && (
               <div className="space-y-2">
-                <Label htmlFor="name" className="text-slate-900 font-medium">
+                <Label htmlFor="name" className="text-white font-medium">
                   Full Name
                 </Label>
                 <div className="relative">
@@ -126,7 +126,7 @@ const Auth = () => {
                     placeholder="Enter your full name"
                     value={formData.name}
                     onChange={handleInputChange}
-                    className="pl-10 h-12 bg-white/90 border-slate-300 focus:border-mindspace-400 focus:ring-mindspace-400"
+                    className="pl-10 h-12 bg-white/90 border-gray-300 focus:border-yellow-400 focus:ring-yellow-400"
                     required
                   />
                 </div>
@@ -134,11 +134,11 @@ const Auth = () => {
             )}
 
             <div className="space-y-2">
-              <Label htmlFor="email" className="text-slate-900 font-medium">
+              <Label htmlFor="email" className="text-white font-medium">
                 Email Address
               </Label>
               <div className="relative">
-                <Mail className="absolute left-3 top-1/2 transform -translate-y-1/2 h-5 w-5 text-slate-500" />
+                <Mail className="absolute left-3 top-1/2 transform -translate-y-1/2 h-5 w-5 text-gray-500" />
                 <Input
                   id="email"
                   name="email"
@@ -146,18 +146,18 @@ const Auth = () => {
                   placeholder="Enter your email"
                   value={formData.email}
                   onChange={handleInputChange}
-                  className="pl-10 h-12 bg-white/90 border-slate-300 focus:border-mindspace-400 focus:ring-mindspace-400"
+                  className="pl-10 h-12 bg-white/90 border-gray-300 focus:border-yellow-400 focus:ring-yellow-400"
                   required
                 />
               </div>
             </div>
 
             <div className="space-y-2">
-              <Label htmlFor="password" className="text-slate-900 font-medium">
+              <Label htmlFor="password" className="text-white font-medium">
                 Password
               </Label>
               <div className="relative">
-                <Lock className="absolute left-3 top-1/2 transform -translate-y-1/2 h-5 w-5 text-slate-500" />
+                <Lock className="absolute left-3 top-1/2 transform -translate-y-1/2 h-5 w-5 text-gray-500" />
                 <Input
                   id="password"
                   name="password"
@@ -165,13 +165,13 @@ const Auth = () => {
                   placeholder="Enter your password"
                   value={formData.password}
                   onChange={handleInputChange}
-                  className="pl-10 pr-10 h-12 bg-white/90 border-slate-300 focus:border-mindspace-400 focus:ring-mindspace-400"
+                  className="pl-10 pr-10 h-12 bg-white/90 border-gray-300 focus:border-yellow-400 focus:ring-yellow-400"
                   required
                 />
                 <button
                   type="button"
                   onClick={() => setShowPassword(!showPassword)}
-                  className="absolute right-3 top-1/2 transform -translate-y-1/2 text-slate-500 hover:text-slate-700"
+                  className="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-500 hover:text-gray-700"
                 >
                   {showPassword ? (
                     <EyeOff className="h-5 w-5" />
@@ -181,7 +181,7 @@ const Auth = () => {
                 </button>
               </div>
               {!isLogin && (
-                <p className="text-xs text-slate-600 mt-1">
+                <p className="text-xs text-gray-200 mt-1">
                   Password must be at least 8 characters long
                 </p>
               )}
@@ -194,13 +194,13 @@ const Auth = () => {
                     type="checkbox"
                     className="rounded border-gray-300 text-mindspace-600 focus:ring-mindspace-500"
                   />
-                  <span className="ml-2 text-sm text-slate-800">
+                  <span className="ml-2 text-sm text-gray-100">
                     Remember me
                   </span>
                 </label>
                 <a
                   href="#"
-                  className="text-sm text-mindspace-600 hover:text-mindspace-700"
+                  className="text-sm text-yellow-300 hover:text-yellow-200"
                 >
                   Forgot password?
                 </a>
@@ -223,9 +223,9 @@ const Auth = () => {
             </Button>
 
             {!isLogin && (
-              <p className="text-xs text-center text-slate-600">
+              <p className="text-xs text-center text-gray-200">
                 By creating an account, you agree to our{" "}
-                <a href="#" className="text-mindspace-600 hover:underline">
+                <a href="#" className="text-yellow-300 hover:underline">
                   Terms of Service
                 </a>{" "}
                 and{" "}
@@ -239,11 +239,11 @@ const Auth = () => {
 
         {/* Toggle Auth Mode */}
         <div className="text-center mt-6">
-          <p className="text-slate-800">
+          <p className="text-gray-100">
             {isLogin ? "Don't have an account?" : "Already have an account?"}
             <button
               onClick={() => setIsLogin(!isLogin)}
-              className="ml-2 text-mindspace-600 hover:text-mindspace-700 font-medium"
+              className="ml-2 text-yellow-300 hover:text-yellow-200 font-medium"
             >
               {isLogin ? "Sign up" : "Sign in"}
             </button>
@@ -253,7 +253,7 @@ const Auth = () => {
         {/* Social proof for signup */}
         {!isLogin && (
           <div className="mt-8 text-center">
-            <p className="text-sm text-slate-600 mb-4">
+            <p className="text-sm text-gray-200 mb-4">
               Trusted by 50,000+ users worldwide
             </p>
             <div className="flex justify-center space-x-2">
