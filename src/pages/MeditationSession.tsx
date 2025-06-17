@@ -21,6 +21,7 @@ import {
   Heart,
   Brain,
   Sparkles,
+  Moon,
 } from "lucide-react";
 
 const MeditationSession = () => {
