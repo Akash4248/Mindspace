@@ -9,6 +9,7 @@ import Auth from "./pages/Auth";
 import Dashboard from "./pages/Dashboard";
 import Environments from "./pages/Environments";
 import Profile from "./pages/Profile";
+import MeditationSession from "./pages/MeditationSession";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -44,6 +45,14 @@ const App = () => (
             element={
               <ProtectedRoute>
                 <Environments />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/environments/:id"
+            element={
+              <ProtectedRoute>
+                <MeditationSession />
               </ProtectedRoute>
             }
           />
